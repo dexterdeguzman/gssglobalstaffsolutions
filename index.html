@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GSS Global Staff Solutions | Offshore staffing that works your hours</title>
+  <meta name="description" content="GSS Global Staff Solutions recruits, equips and supports dedicated offshore professionals in the Philippines, so you can scale your team at up to 70% less than hiring locally.">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" aria-label="GSS Global Staff Solutions home">
+        <img src="assets/logo.png" alt="GSS Global Staff Solutions" width="690" height="177">
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#roles">Roles</a>
+        <a href="#savings">Pricing</a>
+        <a href="#process">How it works</a>
+        <a href="#why">Why GSS</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="#contact" class="link-quiet">Contact</a>
+        <a href="#contact" class="btn btn--primary btn--sm">Book a meeting</a>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="#roles">Roles</a>
+      <a href="#savings">Pricing</a>
+      <a href="#process">How it works</a>
+      <a href="#why">Why GSS</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn--primary">Book a meeting</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__panel">
+        <div class="hero__grid" aria-hidden="true"></div>
+        <div class="hero__glow" aria-hidden="true"></div>
+
+        <div class="hero__copy">
+          <p class="hero__kicker load" style="--d:0">
+            <span class="pulse" aria-hidden="true"></span>
+            <span>Your team in Manila is <strong id="shift-status">on shift</strong></span>
+          </p>
+          <h1 id="hero-title" class="hero__title load" style="--d:1">
+            Skilled offshore staff, working your&nbsp;hours.
+          </h1>
+          <p class="hero__lede load" style="--d:2">
+            GSS recruits, equips and looks after dedicated professionals in the Philippines.
+            You direct the work. We handle hiring, payroll, HR, equipment and compliance, at up to 70% less than hiring locally.
+          </p>
+          <div class="hero__ctas load" style="--d:3">
+            <a href="#savings" class="btn btn--gold">
+              Get pricing
+              <span class="btn__chip" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 12 12 4M6 4h6v6"/></svg></span>
+            </a>
+            <a href="#contact" class="btn btn--ghost">Book a meeting</a>
+          </div>
+
+          <div class="hero__proof load" style="--d:4">
+            <div class="avatars" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=120&h=120&fit=crop&q=70" alt="">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&q=70" alt="">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&h=120&fit=crop&q=70" alt="">
+            </div>
+            <p><strong>Live in 15 to 25 days.</strong><br>From first call to a team that's working.</p>
+          </div>
+        </div>
+
+        <!-- Signature: follow-the-sun dial -->
+        <div class="dial-wrap load" style="--d:2" aria-label="Time comparison between your location and Manila" role="img">
+          <div class="dial">
+            <svg class="dial__face" viewBox="0 0 600 600" aria-hidden="true">
+              <defs>
+                <linearGradient id="arcGold" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#F5C964"/>
+                  <stop offset="1" stop-color="#D8921A"/>
+                </linearGradient>
+                <radialGradient id="core" cx="50%" cy="40%" r="60%">
+                  <stop offset="0" stop-color="#2A5BB5"/>
+                  <stop offset="1" stop-color="#0B2350"/>
+                </radialGradient>
+              </defs>
+              <circle cx="300" cy="300" r="286" class="ring ring--outer"/>
+              <g id="ticks"></g>
+              <circle cx="300" cy="300" r="232" class="ring ring--dash"/>
+              <circle cx="300" cy="300" r="172" class="ring"/>
+              <circle cx="300" cy="300" r="112" class="ring ring--dash"/>
+              <!-- shift arc gets set by JS -->
+              <path id="shift-arc" class="shift-arc" d=""/>
+              <g id="sun" class="sun">
+                <circle r="16" class="sun__halo"/>
+                <circle r="8" class="sun__dot"/>
+              </g>
+              <circle cx="300" cy="300" r="92" fill="url(#core)" class="core"/>
+            </svg>
+
+            <div class="dial__center">
+              <span class="dial__label">Manila</span>
+              <span class="dial__time" id="manila-time">9:00</span>
+              <span class="dial__ampm" id="manila-ampm">AM</span>
+            </div>
+
+            <div class="orbit orbit--a">
+              <figure class="orb"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&q=70" alt=""></figure>
+              <figure class="orb orb--2"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop&q=70" alt=""></figure>
+            </div>
+            <div class="orbit orbit--b">
+              <figure class="orb orb--sm"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&q=70" alt=""></figure>
+              <figure class="orb orb--sm orb--2"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&q=70" alt=""></figure>
+              <figure class="orb orb--sm orb--3"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200&h=200&fit=crop&q=70" alt=""></figure>
+            </div>
+          </div>
+
+          <div class="clock-card clock-card--you">
+            <span class="clock-card__where"><span id="your-label">You</span>, <span id="your-city">your city</span></span>
+            <span class="clock-card__time" id="your-time">--:--</span>
+          </div>
+          <div class="clock-card clock-card--team">
+            <span class="clock-card__legend"><i aria-hidden="true"></i>Your team's shift, matched to your 9 to 6</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROLES MARQUEE -->
+    <section class="marquee" aria-label="Roles we staff">
+      <div class="marquee__track">
+        <ul>
+          <li>Accountants</li><li>Bookkeepers</li><li>Customer service</li><li>Executive assistants</li>
+          <li>Software developers</li><li>Graphic designers</li><li>Sales development</li><li>Property managers</li>
+          <li>Medical billing</li><li>Paralegals</li><li>Social media managers</li><li>QA engineers</li>
+        </ul>
+        <ul aria-hidden="true">
+          <li>Accountants</li><li>Bookkeepers</li><li>Customer service</li><li>Executive assistants</li>
+          <li>Software developers</li><li>Graphic designers</li><li>Sales development</li><li>Property managers</li>
+          <li>Medical billing</li><li>Paralegals</li><li>Social media managers</li><li>QA engineers</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- STATEMENT -->
+    <section class="statement container" aria-label="About GSS">
+      <div class="statement__media">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1000&q=75&fit=crop" alt="A GSS team collaborating around a laptop" loading="lazy">
+        <div class="statement__tag">
+          <strong>99%</strong>
+          <span>staff retention, because we look after our people</span>
+        </div>
+      </div>
+      <div class="statement__body">
+        <h2 class="sr-only">About GSS</h2>
+        <p class="reveal-text" id="reveal-text">We find, hire and look after great people, so they can do great work for you. They join your team, use your tools and keep your hours, while we take care of everything that comes with employing them.</p>
+        <ul class="statement__facts">
+          <li><strong>Full-time and dedicated</strong><span>Your staff work only for you, never shared across clients.</span></li>
+          <li><strong>No setup fees</strong><span>One predictable monthly rate covers salary, HR, IT and office.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ROLES EXPLORER -->
+    <section class="roles container" id="roles" aria-labelledby="roles-title">
+      <div class="section-head">
+        <h2 id="roles-title">Roles you can fill this month</h2>
+        <p>Pick a function to see the roles we hire for most. Every candidate is screened for skills, English and culture fit before you meet them.</p>
+      </div>
+
+      <div class="roles__layout">
+        <div class="roles__list" role="tablist" aria-label="Role categories">
+          <button role="tab" class="role-tab" aria-selected="true" aria-controls="role-panel" data-img="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1100&q=75&fit=crop" data-roles="Accountants|AP/AR specialists|Bookkeepers|Payroll officers">
+            <span class="role-tab__name">Finance and accounting</span>
+            <span class="role-tab__desc">Month-end close, reconciliations, payables and reporting.</span>
+          </button>
+          <button role="tab" class="role-tab" aria-selected="false" aria-controls="role-panel" data-img="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=1100&q=75&fit=crop" data-roles="Customer service reps|Sales development reps|Live chat agents|Sales support">
+            <span class="role-tab__name">Customer and sales support</span>
+            <span class="role-tab__desc">Inbound support, outbound prospecting and account care.</span>
+          </button>
+          <button role="tab" class="role-tab" aria-selected="false" aria-controls="role-panel" data-img="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1100&q=75&fit=crop" data-roles="Executive assistants|Project coordinators|Virtual assistants|Back-office support">
+            <span class="role-tab__name">Operations and admin</span>
+            <span class="role-tab__desc">Inboxes, calendars, data entry and the work that keeps things running.</span>
+          </button>
+          <button role="tab" class="role-tab" aria-selected="false" aria-controls="role-panel" data-img="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1100&q=75&fit=crop" data-roles="Graphic designers|Social media managers|Content writers|SEO specialists">
+            <span class="role-tab__name">Digital marketing</span>
+            <span class="role-tab__desc">Design, content and campaigns produced to your brand.</span>
+          </button>
+          <button role="tab" class="role-tab" aria-selected="false" aria-controls="role-panel" data-img="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1100&q=75&fit=crop" data-roles="Software developers|QA engineers|DevOps support|IT helpdesk">
+            <span class="role-tab__name">IT and development</span>
+            <span class="role-tab__desc">Engineers who join your sprints and ship in your stack.</span>
+          </button>
+          <button role="tab" class="role-tab" aria-selected="false" aria-controls="role-panel" data-img="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1100&q=75&fit=crop" data-roles="Product listing specialists|Inventory coordinators|Order management|Logistics support">
+            <span class="role-tab__name">eCommerce and logistics</span>
+            <span class="role-tab__desc">Listings, orders and inventory handled around the clock.</span>
+          </button>
+        </div>
+
+        <div class="roles__panel" id="role-panel" role="tabpanel" aria-live="polite">
+          <img id="role-img" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1100&q=75&fit=crop" alt="" loading="lazy">
+          <div class="roles__chips" id="role-chips"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM BUILDER -->
+    <section class="savings" id="savings" aria-labelledby="savings-title">
+      <div class="savings__panel">
+        <div class="savings__intro">
+          <h2 id="savings-title">See how much you can save before you hire</h2>
+          <p>GSS delivers the same role at a fraction of the fully loaded local cost, turning high fixed overheads into one predictable monthly rate. Teams of 5 to 10 typically save $150K to $450K a year.</p>
+          <div class="savings__ctas">
+            <a href="#contact" class="btn btn--primary">Get pricing</a>
+            <a href="#contact" class="btn btn--outline">Book a meeting</a>
+          </div>
+        </div>
+
+        <div class="browser">
+          <div class="browser__bar" aria-hidden="true">
+            <span class="browser__dots"><i></i><i></i><i></i></span>
+            <span class="browser__url">
+              <svg viewBox="0 0 16 16"><rect x="3.5" y="7" width="9" height="6.5" rx="1.5"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"/></svg>
+              gssglobalstaffsolutions.com/team-builder
+            </span>
+          </div>
+
+          <div class="tb" id="team-builder">
+            <div class="tb__head">
+              <div>
+                <h3>GSS Team Builder</h3>
+                <p>Build your team to see monthly costs side by side.</p>
+              </div>
+              <div class="tb__controls">
+                <div class="tb__add">
+                  <label class="sr-only" for="tb-add">Add a team member</label>
+                  <select id="tb-add">
+                    <option value="">Add team member</option>
+                  </select>
+                </div>
+                <div class="tb__country">
+                  <label class="sr-only" for="tb-country">Compare against</label>
+                  <select id="tb-country">
+                    <option value="US">United States</option>
+                    <option value="AU">Australia</option>
+                    <option value="UK">United Kingdom</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="tb__table" role="table" aria-label="Your team">
+              <div class="tb__row tb__row--head" role="row">
+                <span role="columnheader">Role</span>
+                <span role="columnheader">Staff</span>
+                <span role="columnheader">Experience</span>
+                <span role="columnheader" class="num">Local hire</span>
+                <span role="columnheader" class="num">With GSS</span>
+                <span role="columnheader" class="num">You save</span>
+                <span role="columnheader"><span class="sr-only">Remove</span></span>
+              </div>
+              <div id="tb-rows" role="rowgroup"></div>
+              <p class="tb__empty" id="tb-empty" hidden>Your team is empty. Add a role above to start.</p>
+            </div>
+
+            <dl class="tb__totals">
+              <div><dt>Monthly cost of hiring locally</dt><dd id="tb-local">0</dd></div>
+              <div><dt>Monthly savings with GSS</dt><dd id="tb-save" class="is-save">0</dd></div>
+            </dl>
+
+            <div class="tb__total">
+              <span>Estimated monthly cost with GSS</span>
+              <strong><small id="tb-cur">US$</small><span id="tb-gss">0</span></strong>
+            </div>
+
+            <div class="tb__foot">
+              <button type="button" class="tb__link" id="tb-reset">
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8a5.5 5.5 0 1 0 1.7-4"/><path d="M2.5 2.5V5H5"/></svg>
+                Reset team
+              </button>
+              <a href="#contact" class="btn btn--primary btn--sm">Get an exact quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="savings__note container">Estimates use average fully loaded local costs including salary, benefits, tax and overhead. Your quote depends on role seniority and schedule.</p>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process container" id="process" aria-labelledby="process-title">
+      <div class="section-head section-head--split">
+        <h2 id="process-title">From first call to first shift in under a month</h2>
+        <p>Most teams are working within 15 to 25 days. You approve every hire, and a dedicated account manager stays with you after go-live.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step__num">1</span>
+          <div class="step__img"><img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=75&fit=crop" alt="" loading="lazy"></div>
+          <h3>Align and match</h3>
+          <p>We learn the role, your goals and how you work, then shortlist pre-vetted candidates for you to interview and choose.</p>
+          <span class="step__time">Days 1 to 10</span>
+        </li>
+        <li class="step">
+          <span class="step__num">2</span>
+          <div class="step__img"><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=75&fit=crop" alt="" loading="lazy"></div>
+          <h3>Equip and onboard</h3>
+          <p>We handle contracts, set up a secure workstation and connectivity, and start training on your tools, workflows and KPIs.</p>
+          <span class="step__time">Days 10 to 25</span>
+        </li>
+        <li class="step">
+          <span class="step__num">3</span>
+          <div class="step__img"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=75&fit=crop" alt="" loading="lazy"></div>
+          <h3>Operate and grow</h3>
+          <p>You manage the day-to-day work. We look after attendance, wellbeing, performance support and adding people as you grow.</p>
+          <span class="step__time">Ongoing</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- WHY GSS -->
+    <section class="why" id="why" aria-labelledby="why-title">
+      <div class="container why__inner">
+        <div class="why__head">
+          <h2 id="why-title">Built for businesses that can't afford the wrong hire</h2>
+          <p>Offshoring only works when people stay, data stays safe and you stay in control. That's what we're built around.</p>
+          <dl class="why__stats">
+            <div><dt>Staff retention</dt><dd>99%</dd></div>
+            <div><dt>Lower staffing cost</dt><dd>70%</dd></div>
+            <div><dt>Days to go live</dt><dd>15–25</dd></div>
+            <div><dt>Coverage available</dt><dd>24/7</dd></div>
+          </dl>
+        </div>
+
+        <ul class="why__list">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <div><h3>Synced to your hours</h3><p>Your team works your business day, whether that's New York, Sydney or London.</p></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8.4 8 9 4.6-.6 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+            <div><h3>Secure by default</h3><p>Managed workstations, fixed IP connections, access controls and NDAs for every hire.</p></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20c0-3.3 3.6-6 8-6s8 2.7 8 6"/><circle cx="12" cy="8" r="4"/></svg>
+            <div><h3>People who stay</h3><p>Competitive pay, health cover, training and a real workplace culture keep your knowledge in-house.</p></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg>
+            <div><h3>You stay in control</h3><p>You set the tasks, standards and priorities. We handle HR, payroll, benefits and compliance.</p></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg>
+            <div><h3>Scale up or down</h3><p>Add a role next month or build a full department. No lock-in to a fixed headcount.</p></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4V5Z"/></svg>
+            <div><h3>A named account manager</h3><p>One person who knows your business and resolves issues before they become problems.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- INDUSTRIES -->
+    <section class="industries container" aria-labelledby="ind-title">
+      <h2 id="ind-title">Teams for the industries we know best</h2>
+      <ul class="industries__list">
+        <li>Accounting firms</li><li>Real estate</li><li>Mortgage broking</li><li>Healthcare</li>
+        <li>Legal</li><li>Billing and collections</li><li>eCommerce</li><li>Technology</li>
+        <li>Construction</li><li>Travel and leisure</li><li>Financial services</li><li>Property management</li>
+      </ul>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq container" id="faq" aria-labelledby="faq-title">
+      <div class="faq__head">
+        <h2 id="faq-title">Questions we hear most</h2>
+        <p>Can't find your answer? <a href="#contact">Send us a message</a> and we'll reply within one business day.</p>
+      </div>
+      <div class="faq__list">
+        <details open>
+          <summary>How do I know if offshoring is right for my business?</summary>
+          <p>If you want to lower overhead, scale faster or reach skills that are hard to hire locally, offshoring is worth exploring. Roles with clear processes and measurable output usually transition best. We'll tell you honestly on our first call if a role isn't a good fit.</p>
+        </details>
+        <details>
+          <summary>What will it actually cost?</summary>
+          <p>You pay one monthly rate per team member that covers salary, benefits, HR, IT equipment, office space and management. Clients typically save 50 to 70 percent compared with hiring locally. There are no setup fees or hidden charges.</p>
+        </details>
+        <details>
+          <summary>Can my team work US or Australian hours?</summary>
+          <p>Yes. Our staff work schedules aligned to your time zone, including US Eastern and Pacific, UK and Australian business hours.</p>
+        </details>
+        <details>
+          <summary>How strong is their English?</summary>
+          <p>The Philippines is one of Asia's most fluent English-speaking countries, and every candidate is assessed on written and spoken English before you meet them.</p>
+        </details>
+        <details>
+          <summary>How is my data kept secure?</summary>
+          <p>Staff work on managed computers with fixed IP connectivity, role-based access controls and activity monitoring. Every team member signs confidentiality agreements, and we follow the Philippine Data Privacy Act.</p>
+        </details>
+        <details>
+          <summary>What if someone isn't working out?</summary>
+          <p>Your account manager will look into the root cause, from training gaps to role fit, and agree a plan with you. If the fit isn't right, we'll find a replacement.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta container" id="contact" aria-labelledby="cta-title">
+      <div class="cta__panel">
+        <div class="cta__copy">
+          <h2 id="cta-title">Your next great hire is already awake.</h2>
+          <p>Book a free 30-minute call with a staffing specialist. We'll map out the roles, costs and timeline for your team.</p>
+          <div class="cta__options">
+            <a href="mailto:hello@gssglobalstaffsolutions.com?subject=Book%20a%20meeting" class="btn btn--gold">
+              Book a meeting
+              <span class="btn__chip" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 12 12 4M6 4h6v6"/></svg></span>
+            </a>
+            <a href="mailto:hello@gssglobalstaffsolutions.com" class="btn btn--ghost">Send us a message</a>
+          </div>
+        </div>
+        <div class="cta__art" aria-hidden="true">
+          <svg viewBox="0 0 400 400">
+            <circle cx="200" cy="200" r="190"/><circle cx="200" cy="200" r="140"/>
+            <circle cx="200" cy="200" r="90"/><circle cx="200" cy="200" r="40"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo.png" alt="GSS Global Staff Solutions" width="690" height="177" loading="lazy">
+        <p>Dedicated offshore professionals, recruited, equipped and supported by GSS.</p>
+      </div>
+      <nav class="footer__col" aria-label="Services">
+        <h3>Services</h3>
+        <a href="#roles">Roles we fill</a>
+        <a href="#savings">Pricing</a>
+        <a href="#process">How it works</a>
+        <a href="#why">Security</a>
+      </nav>
+      <nav class="footer__col" aria-label="Company">
+        <h3>Company</h3>
+        <a href="#why">Why GSS</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Careers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer__col">
+        <h3>Get in touch</h3>
+        <a href="mailto:hello@gssglobalstaffsolutions.com">hello@gssglobalstaffsolutions.com</a>
+        <a href="tel:+6320000000">+63 2 0000 0000</a>
+        <span>Manila, Philippines</span>
+      </div>
+    </div>
+    <div class="container footer__base">
+      <span>&copy; <span id="year">2026</span> GSS Global Staff Solutions</span>
+      <span class="footer__legal"><a href="#">Privacy policy</a><a href="#">Terms</a></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
